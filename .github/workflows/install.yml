@@ -3,6 +3,9 @@ name: install
 on:
   pull_request:
 
+  # Allows running this workflow manually from the Actions tab
+  workflow_dispatch:
+
 jobs:
   channel:
     strategy:

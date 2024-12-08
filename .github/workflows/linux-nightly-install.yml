@@ -6,6 +6,9 @@ on:
       - .github/issue-templates/linux-nightly-uninstallable.md
       - .github/workflows/linux-nightly-install.yml
 
+  # Allows running this workflow manually from the Actions tab
+  workflow_dispatch:
+
   schedule:
     - cron: "40 4 * * *"
 
